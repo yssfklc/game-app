@@ -12,7 +12,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import './components.css';
+import './Components.css';
+import { Outlet } from 'react-router-dom';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -37,8 +38,8 @@ function Navbar() {
   };
 
   return (
-    <div className='background'>
-        <AppBar position="static" classname='background'>
+    <>
+        <AppBar position="static" className='background'>
         <Container maxWidth="xl">
             <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -157,9 +158,10 @@ function Navbar() {
                 </Menu>
             </Box>
             </Toolbar>
-        </Container>
+        </Container>  
         </AppBar>
-    </div>
+        <Outlet/>   
+    </>
   );
 }
 export default Navbar;
