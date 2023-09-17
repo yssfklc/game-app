@@ -10,7 +10,7 @@ function App() {
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<Navbar/>}>
       <Route path='home' element={<Home/>} />
-      <Route path='/' element={<Test/>} />
+      <Route path='/' element={<Home/>} />
     </Route>
   ) 
   );

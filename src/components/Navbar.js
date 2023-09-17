@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import logo from './image/logo.svg';
 import './Components.css';
 import { Outlet } from 'react-router-dom';
 
@@ -38,11 +39,12 @@ function Navbar() {
   };
 
   return (
-    <>
-        <AppBar position="static" className='background'>
+    <div>
+        <div className='sticky top-0'>
+        <AppBar position="static" className='background '>
         <Container maxWidth="xl">
             <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
             <Typography
                 variant="h6"
                 noWrap
@@ -58,7 +60,7 @@ function Navbar() {
                 textDecoration: 'none',
                 }}
             >
-                LOGO
+                <img src={logo} className='w-8'/>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -97,7 +99,7 @@ function Navbar() {
                 ))}
                 </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+            {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
             <Typography
                 variant="h5"
                 noWrap
@@ -114,7 +116,8 @@ function Navbar() {
                 textDecoration: 'none',
                 }}
             >
-                LOGO
+                <img src={logo} className='w-8'/>
+
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {pages.map((page) => (
@@ -160,8 +163,9 @@ function Navbar() {
             </Toolbar>
         </Container>  
         </AppBar>
+        </div>
         <Outlet/>   
-    </>
+    </div>
   );
 }
 export default Navbar;

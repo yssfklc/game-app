@@ -1,48 +1,4 @@
 
-/*flex properties*/
- .flex-column-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.flex-row-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.flex-column-start-center{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-.flex-column-end-center{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-}
-.flex-column-center-left{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    height: 100%;
-}
-.flex-column-center-spacebetween{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.flex-column-center-spacearound{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.flex-column-center-spaceevenly{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .container-1 {
     background-image: url('./image/game_svg.svg');
     height: 90vh;
@@ -51,5 +7,5 @@
 }
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root{
-    background-color: #070320!important;
+    background-color: #0c0534!important;
 }
