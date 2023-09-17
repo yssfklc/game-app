@@ -14,9 +14,10 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import logo from './image/logo.svg';
 import './Components.css';
-import { Outlet } from 'react-router-dom';
+import Footer from './Footer';
+import { Outlet, NavLink } from 'react-router-dom';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = [['Products', 'products'], ['Games', 'games'], ['About Us', 'aboutus']];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -39,7 +40,7 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <div className=''>
         <div className='sticky top-0'>
         <AppBar position="static" className='background '>
         <Container maxWidth="xl">
@@ -93,8 +94,8 @@ function Navbar() {
                 }}
                 >
                 {pages.map((page) => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    <MenuItem key={page[0]}  onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center" >{page[0]}</Typography>
                     </MenuItem>
                 ))}
                 </Menu>
@@ -122,17 +123,21 @@ function Navbar() {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {pages.map((page) => (
                 <Button
-                    key={page}
+                    key={page[0]}
+                    href={page[1]}
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: 'white', display: 'block' }}
                 >
-                    {page}
+                    {page[0]}
                 </Button>
                 ))}
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-                <Tooltip title="Open settings">
+                <NavLink to='/register' className='bg-red-800 py-2 px-6 mr-6 rounded-2xl text-gray-100 inline bg-gradient-to-r from-red-600  to-orange-400'>SIGN UP</NavLink>
+                <NavLink to='/login' className='px-6 mr-6'>SIGN IN</NavLink>
+
+                {/* <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                     <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
                 </IconButton>
@@ -158,13 +163,14 @@ function Navbar() {
                     <Typography textAlign="center">{setting}</Typography>
                     </MenuItem>
                 ))}
-                </Menu>
+                </Menu> */}
             </Box>
             </Toolbar>
         </Container>  
         </AppBar>
         </div>
         <Outlet/>   
+        <Footer className='col-start-3 col-span-8' />
     </div>
   );
 }

@@ -145,7 +145,7 @@ console.log(imgarr);
                 <h3 className='text-gray-100 text-lg font-bold mb-3'>Lorem Ipsum</h3>
                 <p className='text-gray-100'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
-              <div className='bg-gray-100 rounded-lg py-10 px-5 flex justify-between items-center'>
+              <div className='bg-gray-200 rounded-lg py-10 px-5 flex justify-between items-center'>
                 <div className='w-1/2'>
                   <h3 className='text-black text-xl font-extrabold mb-3 leading-7 tracking-wider'>Lorem Ipsum</h3>
                   <p className='text-black'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -155,7 +155,7 @@ console.log(imgarr);
                   <button type='submit' className='bg-red-800 py-1 px-3 rounded-lg text-gray-800 inline-flex justify-center'>Continue</button>
                 </div>
               </div>
-        </div>    
+        </div>
     </div>
   )
 }
