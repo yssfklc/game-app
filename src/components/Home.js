@@ -20,7 +20,7 @@ import g17 from './image/g17.png';
 import i1 from './image/i1.svg';
 import i2 from './image/i2.svg';
 import s2 from './image/s2.svg';
-import './Components.css';
+import '../App.css';
 
 
 function Home() {

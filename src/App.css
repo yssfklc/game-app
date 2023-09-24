@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+.container-1 {
+  background-image: url('./components/image/game_svg.svg');
+  height: 90vh;
+  width: 40rem;
+  background-repeat: no-repeat;
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+  background-color: #0c0534!important;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import logo from './image/logo.svg';
-import './Components.css';
+import '../App.css';
 import Footer from './Footer';
 import { Outlet, NavLink } from 'react-router-dom';
 
