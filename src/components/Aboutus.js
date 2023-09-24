@@ -1,10 +1,10 @@
 import React from 'react';
 import g18 from './image/g18.png';
 import g19 from './image/g19.png';
-import i7 from './image/i7.svg';
-import i8 from './image/i8.svg';
-import i9 from './image/i9.svg';
-import i10 from './image/i10.svg';
+import i7 from './image/i7.png';
+import i8 from './image/i8.png';
+import i9 from './image/i9.png';
+import i10 from './image/i10.png';
 
 function Aboutus() {
     const employees=[[i7, 'John peter', 'COO'],[i8, 'John peter', 'COO'],[i9, 'John peter', 'COO'],[i10, 'John peter', 'COO']]
