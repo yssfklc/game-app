@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 - This project is full-stack PERN project.
 - This project is developed to practice tailwind css library and Material UI component library.
+- The project lives on https://gameapp-yssfklc.netlify.app/
 - Design of the Projects : https://www.figma.com/file/XYeuW67CYYL1U8FndlUD2c/Untitled?type=design&node-id=0%3A1&mode=design&t=TMDlxYVJZxRrM0zl-1 , This design is received from figma community thank you to the designer, and it is changed for my gaming project.
 
 ## Project Backlog
