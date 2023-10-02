@@ -41,8 +41,8 @@ function Navbar() {
 
   return (
     <div className=''>
-        <div className='sticky top-0'>
-        <AppBar position="static" className='background '>
+        <div className='sticky top-0 max-sm:z-10 '>
+        <AppBar position="static" className='background !bg-gray-700 '>
         <Container maxWidth="xl">
             <Toolbar disableGutters>
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -61,7 +61,7 @@ function Navbar() {
                 textDecoration: 'none',
                 }}
             >
-                <img src={logo} className='w-8'/>
+                <img src={logo} className='w-8 pr-1'/>
             </NavLink>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
