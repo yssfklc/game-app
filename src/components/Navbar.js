@@ -17,7 +17,7 @@ import '../App.css';
 import Footer from './Footer';
 import { Outlet, NavLink } from 'react-router-dom';
 
-const pages = [['Products', 'products'], ['Games', 'games'], ['About Us', 'aboutus']];
+const pages = [['Products', '/products'], ['Games', '/games'], ['About Us', '/aboutus']];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -101,7 +101,7 @@ function Navbar() {
                 </Menu>
             </Box>
             {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-            <Typography
+            <NavLink
                 variant="h5"
                 noWrap
                 component="a"
@@ -117,19 +117,20 @@ function Navbar() {
                 textDecoration: 'none',
                 }}
             >
-                <img src={logo} className='w-8'/>
+                {/* <img src={logo} className='w-8'/> */}
 
-            </Typography>
+            </NavLink>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {pages.map((page) => (
-                <Button
+                <NavLink
                     key={page[0]}
                     href={page[1]}
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: 'white', display: 'block' }}
+                    className='pr-5'
                 >
                     {page[0]}
-                </Button>
+                </NavLink>
                 ))}
             </Box>
 
