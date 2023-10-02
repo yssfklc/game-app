@@ -10,7 +10,7 @@ import i6 from './image/i6.svg';
 function Footer() {
   return (
     <div className='bg-gray-200 px-10 py-5 mt-10 mx-auto px-auto'>
-        <div className='flex border-4 border-b-gray-500 justify-evenly'>
+        <div className='flex border-4 border-b-gray-500 justify-evenly '>
             <div className='w-1/4 flex flex-col justify-center items-start px-5'>
                 <img src={logo} alt='' className='w-10' />
                 <br/>

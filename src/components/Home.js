@@ -28,10 +28,10 @@ const imgarr=[];
 imgarr.push(g1, g2, g3, g4)
 console.log(imgarr);
   return (
-    <div className='grid grid-cols-12 grid-row-6 gap-10' >
-        <div className='container-1 col-start-5 col-span-4 row-start-1 row-span-1' >
+    <div className='grid grid-cols-12 grid-row-6 gap-10 max-lg:flex max-lg:flex-col max-lg:justify-center' >
+        <div className='container-1 col-start-5 col-span-4 row-start-1 row-span-1 max-lg:hidden max-lg:w-full max-lg:absolute max-lg:top-20 max-lg:z-0' >
         </div>
-        <div className='col-start-3 col-span-4 row-start-1 row-span-1 flex flex-col justify-center'>
+        <div className='col-start-3 col-span-4 row-start-1 row-span-1 flex flex-col justify-center max-lg:z-10 max-lg:my-20 px-10'>
             <p className='text-orange-400 font-bold mb-8'>Proved By prodesigner</p>
             <h1 className='text-gray-100 text-4xl mb-8 font-extrabold leading-relaxed	w-3/4 font-serif'>Work that we produce for our clients</h1>
             <p className='text-gray-100 mb-20'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
@@ -40,13 +40,13 @@ console.log(imgarr);
 
             </div>
         </div>
-        <div className='col-start-3 col-span-8 row-start-2 row-span-1'>
+        <div className='col-start-3 col-span-8 row-start-2 row-span-1 max-lg:z-10'>
           <div className=''>
             <div className='flex justify-between mb-10'>
               <h2 className='text-gray-100 text-2xl font-bold'>Currently Trending Games</h2>
               <a href='#' className='bg-gray-800/100 py-1 px-2 rounded-lg text-gray-100 inline-flex justify-center'>See All</a>
             </div>
-            <div className='flex justify-between'>
+            <div className='flex justify-between max-lg:flex-wrap max-lg:justify-center'>
               {imgarr.map((img)=>{
                 return(
                 <div className='mr-4'>
@@ -61,9 +61,9 @@ console.log(imgarr);
         </div>
         <div className='col-start-3 col-span-8 row-start-3 row-span-1'>
           <div className='flex justify-center items-center my-40 '>
-            <h3 className='text-gray-100 text-2xl font-bold w-1/2 text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+            <h3 className='text-gray-100 text-2xl font-bold w-1/2 text-center max-lg:w-full max-lg:px-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
           </div>
-          <div className='w-1/2'>
+          <div className='w-1/2 max-lg:w-full max-lg:px-10'>
             <h3 className='text-gray-100 text-lg font-bold mb-3'>Lorem Ipsum</h3>
             <p className='text-gray-100'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
           </div>
@@ -145,8 +145,8 @@ console.log(imgarr);
                 <h3 className='text-gray-100 text-lg font-bold mb-3'>Lorem Ipsum</h3>
                 <p className='text-gray-100'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
-              <div className='bg-gray-200 rounded-lg py-10 px-5 flex justify-between items-center'>
-                <div className='w-1/2'>
+              <div className='bg-gray-200 rounded-lg py-10 px-5 flex justify-between items-center max-lg:block'>
+                <div className='w-1/2 max-lg:w-full max-lg:mb-5'>
                   <h3 className='text-black text-xl font-extrabold mb-3 leading-7 tracking-wider'>Lorem Ipsum</h3>
                   <p className='text-black'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>

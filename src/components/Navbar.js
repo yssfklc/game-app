@@ -46,11 +46,11 @@ function Navbar() {
         <Container maxWidth="xl">
             <Toolbar disableGutters>
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-            <Typography
+            <NavLink
                 variant="h6"
                 noWrap
                 component="a"
-                href="/"
+                to="/"
                 sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -62,7 +62,7 @@ function Navbar() {
                 }}
             >
                 <img src={logo} className='w-8'/>
-            </Typography>
+            </NavLink>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                 <IconButton
@@ -95,7 +95,7 @@ function Navbar() {
                 >
                 {pages.map((page) => (
                     <MenuItem key={page[0]}  onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center" >{page[0]}</Typography>
+                    <NavLink textAlign="center" >{page[0]}</NavLink>
                     </MenuItem>
                 ))}
                 </Menu>
@@ -105,7 +105,7 @@ function Navbar() {
                 variant="h5"
                 noWrap
                 component="a"
-                href="/"
+                to="/"
                 sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
@@ -124,7 +124,7 @@ function Navbar() {
                 {pages.map((page) => (
                 <NavLink
                     key={page[0]}
-                    href={page[1]}
+                    to={page[1]}
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: 'white', display: 'block' }}
                     className='pr-5'
